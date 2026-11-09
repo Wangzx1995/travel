@@ -12,3 +12,18 @@ for u in https://www.baidu.com https://www.google.com https://accounts.google.co
 done
 echo "5) Chrome 版本"; defaults read "/Applications/Google Chrome.app/Contents/Info.plist" CFBundleShortVersionString 2>/dev/null
 echo "6) Chrome 已运行"; ps -o etime= -p $(pgrep -f "MacOS/Google Chrome$" | head -1) 2>/dev/null
+
+
+
+1) 系统代理设置
+2) 本地代理端口
+3) 检测到代理: 无
+4) 连通性测试
+  https://www.baidu.com  直连=200  走代理=超时
+  https://www.google.com  直连=000  走代理=超时
+  https://accounts.google.com  直连=000  走代理=超时
+  https://www.gstatic.com/  直连=000  走代理=超时
+5) Chrome 版本
+157.0.8103.38
+6) Chrome 已运行
+01:52:10
